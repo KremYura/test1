@@ -11,7 +11,7 @@ on:
     # refs:
     #   - 'refs/pull/*/merge'
   pull_request:
-    branches: [ "refs/pull/*/merge" ]
+    branches: [ "main", "refs/pull/*/merge" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
