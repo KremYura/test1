@@ -16,6 +16,7 @@ on:
   #   branches: [ "main" ]
 status:
     types: [success]
+    branches: [ "refs/pull/**" ]
 pull_request:
     types:
       - assigned
