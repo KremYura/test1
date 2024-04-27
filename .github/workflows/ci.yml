@@ -12,8 +12,10 @@ on:
     # Match the merge reference of any pull request
     # refs:
     #   - 'refs/pull/*/merge'
-  pull_request_target:
-    branches: [ "main" ]
+  # pull_request_target:
+  #   branches: [ "main" ]
+  status:
+    types: [success]
   pull_request:
     branches: [ "main" ]
 
