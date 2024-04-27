@@ -14,7 +14,9 @@ on:
     #   - 'refs/pull/*/merge'
   # pull_request_target:
   #   branches: [ "main" ]
-  pull_request:
+status:
+    types: [success]
+pull_request:
     types:
       - assigned
       - unassigned
