@@ -7,8 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   # check_run:
   #   types: [completed]
-  # push:
-  #   branches: [ "refs/pull/*/merge" ]
+  push:
+    branches: [ "refs/pull/*/merge" ]
     # Match the merge reference of any pull request
     # refs:
     #   - 'refs/pull/*/merge'
