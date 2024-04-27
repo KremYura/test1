@@ -14,10 +14,10 @@ on:
     #   - 'refs/pull/*/merge'
   # pull_request_target:
   #   branches: [ "main" ]
-# status:
-#     types: [success]
-#     branches: [ "refs/pull/**" ]
-pull_request:
+  # status:
+  #     types: [success]
+  #     branches: [ "refs/pull/**" ]
+  pull_request:
     types:
       - assigned
       - unassigned
