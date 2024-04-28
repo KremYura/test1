@@ -8,7 +8,8 @@ on:
   # check_run:
   #   types: [completed]
   push:
-    branches: [ "pull/**", "pull/*/merge", "refs/pull/**", "refs/pull/*/merge" ]
+    branches:
+      - 'refs/pull/*/merge'
     # Match the merge reference of any pull request
     # refs:
     #   - 'refs/pull/*/merge'
@@ -36,6 +37,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+        with:
+            ref: ${{ github.head_ref }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
