@@ -10,7 +10,7 @@ on:
   push:
     branches:
       - 'refs/pull/*/merge'
-      - 'pull/*/merge'
+      - 'pull/**'
       - '*/merge'
       - 'feature1'
     # Match the merge reference of any pull request
