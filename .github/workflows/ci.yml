@@ -18,10 +18,10 @@ on:
   # status:
   #     types: [success]
   #     branches: [ "refs/pull/**" ]
-  pull_request:
-    types:
-      - opened
-      - synchronize
+  # pull_request:
+  #   types:
+  #     - opened
+  #     - synchronize
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -37,8 +37,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-        with:
-            ref: ${{ github.head_ref }}
+        # with:
+        #     ref: ${{ github.head_ref }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
