@@ -8,7 +8,7 @@ on:
   # check_run:
   #   types: [completed]
   push:
-    branches: [ "pull/**" ]
+    branches: [ "pull/**", "pull/*/merge", "refs/pull/**", "refs/pull/*/merge" ]
     # Match the merge reference of any pull request
     # refs:
     #   - 'refs/pull/*/merge'
