@@ -18,7 +18,6 @@ on:
   #     types: [success]
   #     branches: [ "refs/pull/**" ]
   pull_request:
-    branches: [ "main", "pull/*/merge" ]
     types:
       - opened
       - synchronize
